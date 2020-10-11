@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-left: 5vw;
+  width: 95vw;
+}
+
+hr {
+  margin-left: -2%;
+}
+
+#togglebuttons {
+  text-align: right;
+  font-size: larger;
+}
+
+#header {
+  font-family: cursive;
+  width: 80vw;
+}
+
+#main {
+  background-color: rgb(250, 250, 250);
+  padding-top: 10vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10vw;
+}
+#submitbtn,
+#resetbtn {
+  font-size: x-large;
+}
+hr {
+  width: 50%;
+}
+
+#footer {
+  color: gray;
+  font-family: cursive;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  #header {
+    width: 85vw;
+  }
+  #main {
+    padding-top: 8vh;
+    padding-left: 8vw;
+  }
+  hr {
+    width: 70%;
+  }
+  #footer {
+    padding-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+    width: 90vw;
+  }
+  #main {
+    padding-top: 5vh;
+    padding-left: 5vw;
+  }
+  hr {
+    width: 85%;
+  }
+  #footer {
+    padding-top: 5vh;
+  }
+}
