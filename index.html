@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Hotel - Hotel Reservation Form</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body id="body">
+    <div id="togglebuttons">
+        <button id="togglenight" onclick="toggleNight()">Toggle Night</button>
+        <button id="toggleday" onclick="toggleDay()">Toggle Day</button>
+    </div>
+
+    <div id="header">
+        <h1>Taj Hotel</h1>
+        <p>Taj Hotels is a chain of luxury hotels and a subsidiary of the Indian Hotels Company Limited; headquartered
+            at Express Towers, Nariman Point in Mumbai. Incorporated by the founder of the Tata Group, Jamsetji Tata, in
+            1903, the company is a part of the Tata Group, one of India's largest business conglomerates.</p>
+    </div>
+
+    <div id="main">
+        <form name="hotelForm" action="" onsubmit="return validateForm()" method="GET">
+
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" name="fname" id="fname" autocomplete="off" required placeholder="First Name" tabindex="1"
+                autocapitalize="words">
+
+            <br>
+            <hr>
+            <br>
+
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="tel" name="lname" id="lname" autocomplete="off" required placeholder="Last Name" tabindex="2"
+                autocapitalize="words">
+
+            <br>
+            <hr>
+            <br>
+
+            <label for="phone">Phone</label>
+            <br>
+            <input type="number" name="phone" id="phone" autocomplete="off" required placeholder="1231231231"
+                tabindex="3" minlength="10" maxlength="10">
+
+            <br>
+            <hr>
+            <br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" autocomplete="off" required placeholder="abc@example.com"
+                tabindex="4">
+
+            <br>
+            <hr>
+            <br>
+
+            Please select your gender:
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+            <br>
+            <hr>
+            <br>
+
+            Date of Birth
+            <br>
+            <input type="date" id="dob" required>
+
+            <br>
+            <hr>
+            <br>
+
+            Please select number of rooms
+            <br>
+            <select name="rooms" id="rooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+                <option value="4">6+</option>
+            </select>
+
+            <br>
+            <hr>
+            <br>
+
+            Please select if you are travelling with
+            <br>
+            <input type="checkbox" id="askchildren" name="askchildren" value="Children">
+            <label for="askchildren">Children</label>
+
+            <br>
+            <hr>
+            <br>
+
+            Please select number of people
+            <br>
+            <input type="number" name="numberppl" id="numberppl" required min="1" max="25">
+            <span id="demo"></span>
+
+            <br>
+            <hr>
+            <br>
+
+            Checkin Date
+            <br>
+            <input type="date" name="checkinDate" id="checkinDate" required min="2020-10-11">
+
+            <br>
+            <hr>
+            <br>
+
+            Checkin Time
+            <br>
+            <input type="time" name="checkinTime" id="checkinTime" required>
+
+            <br>
+            <hr>
+            <br>
+
+            Checkout Date
+            <br>
+            <input type="date" name="checkoutDate" id="checkoutDate" required min="2020-10-12">
+
+            <br>
+            <hr>
+            <br>
+
+            Checkout Time
+            <br>
+            <input type="time" name="checkoutTime" id="checkoutTime" required>
+
+            <br>
+            <hr>
+            <br>
+
+            <input type="submit" value="Submit" id="submitbtn">
+            <input type="reset" value="reset" id="resetbtn">
+        </form>
+    </div>
+
+    <div id="footer">
+        <h3 id="created">Created By</h3>
+        <h4 id="names">Kamaldeep Singh & Arshdeep Kaur</h4>
+
+    </div>
+
+</body>
+
+</html>
